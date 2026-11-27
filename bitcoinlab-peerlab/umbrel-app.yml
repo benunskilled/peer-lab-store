@@ -2,7 +2,7 @@ manifestVersion: 1
 id: bitcoinlab-peerlab
 category: bitcoin
 name: Peer Lab
-version: "1.0.1"
+version: "1.1.0"
 tagline: Who your node talks to, and who brings it blocks first
 description: >-
   Your node talks to strangers all day. Each one says what software it runs, but is it telling the truth? Peer Lab takes a closer look: what a peer offers, whether it wants your transactions, which chain it is on. A normal node, a wallet, a crawler, or a spy in disguise? The map shows where they are and who hosts them.
@@ -11,12 +11,12 @@ description: >-
   Every new block reaches your node through one of these peers. Peer Lab notes for every block who was first, and each peer carries its count, like 43 of 1,693 blocks. Open a peer to see everything else: its traffic, what it announced, and the buttons to keep it or let it go.
 
 
-  Core has eight manual slots it never fills on its own. Slot Fill uses them for spread: other regions, other providers. Stratum Race times how fast your own pool turns a new block into fresh work, next to public solo pools. Both are off by default. Peer Lab never touches bitcoin.conf, wallets or keys, and no peer address goes to any outside service.
+  Core has eight manual slots it never fills on its own. Slot Fill uses them for spread: other regions, other providers. Stratum Race times how fast your own pool turns a new block into fresh work, next to public pools. Both are off by default. Peer Lab never touches bitcoin.conf, wallets or keys, and no peer address goes to any outside service.
 
 
   IP geolocation and network data by DB-IP (https://db-ip.com), licensed CC BY 4.0. Map data from Natural Earth.
 releaseNotes: >-
-  Stratum Race marks a pool app it finds on this Umbrel, ready to add with one tap. Slot Fill always shows the regions, lists peers being tested newest first, and logs a peer that makes room for one added by hand. Peers behind Tor, I2P or Docker say so instead of showing the proxy's address. Three more programs are recognised, and a peer that misspells Core's name is shown as Disguised. On tablets the kind pills line up and filters show the same detail as on a phone.
+  Make Stratum Race fun again: pick from 128 public pools around the world, solo and shared, and race up to 20 at once. The list opens on the pools you race, with search and a country filter for the rest. The block card shows the race pool by pool as jobs come in. Untick a pool and its numbers stay for when you tick it again – only Reset pool history under Data deletes them. Slot Fill gets an Auto pill with every address it can use, and labels say how sure they are.
 developer: benunskilled
 website: https://github.com/benunskilled/peer-lab
 dependencies:
